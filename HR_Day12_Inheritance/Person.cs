@@ -69,33 +69,32 @@ namespace HR_Day12_Inheritance
 		// Write your method here
 		public char Calculate()
 		{
-			char grade = 'I';
 			int average = testScores.Sum() / testScores.Length;
 			if(average < 40)
 			{
-				grade = 'T';
+				return 'T';
 			}
 			else if(average < 55 && average >= 40)
 			{
-				grade = 'D';
+				return 'D';
 			}
 			else if(average < 70 && average >= 55)
 			{
-				grade = 'P';
+				return 'P';
 			}
 			else if(average < 80 && average >= 70)
 			{
-				grade = 'A';
+				return 'A';
 			}
 			else if(average < 90 && average >= 80)
 			{
-				grade = 'E';
+				return 'E';
 			}
 			else if(average <=100 && average >= 90)
 			{
-				grade = 'O';
+				return 'O';
 			}
-			return grade;
+			return 'I';
 		}
 	}
 
